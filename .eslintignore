@@ -2,3 +2,4 @@ node_modules
 dist
 out
 .gitignore
+/**/tailwind3.3.2.js
