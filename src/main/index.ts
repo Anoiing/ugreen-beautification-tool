@@ -12,6 +12,8 @@ function createWindow(): void {
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
+      webSecurity: false,
+      allowRunningInsecureContent: true,
       nodeIntegration: true,
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false
